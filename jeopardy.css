@@ -1,0 +1,48 @@
+h1{
+text-align: center;
+}
+#jeopardy {
+ background-color: #060ce9;   
+font-size: 15px;
+border: solid black 2px;
+color: white;
+
+}
+
+div.container {
+    width:98%; 
+    margin:1%;
+  }
+table.table1 {
+    text-align:center; 
+    margin-left:auto; 
+    margin-right:auto; 
+    width:1000px;
+  }
+
+#jeopardy th, #jeopardy td{
+padding: 1px;
+border: solid .5px black;
+
+}
+th {
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: 16px;
+    text-transform: uppercase;
+    height:10em;
+    width: 10em;
+    
+}
+td{
+    height:10em;
+    width: 10em;
+    color: yellow;
+    font-family: Arial, sans-serif;
+}
+
+#restart {
+font-weight: bold;
+margin-left: 47%;
+margin-right: -50%;
+}
