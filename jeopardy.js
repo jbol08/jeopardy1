@@ -1,22 +1,3 @@
-// categories is the main data structure for the app; it looks like this:
-
-//  [
-//    { title: "Math",
-//      clues: [
-//        {question: "2+2", answer: 4, showing: null},
-//        {question: "1+1", answer: 2, showing: null}
-//        ...
-//      ],
-//    },
-//    { title: "Literature",
-//      clues: [
-//        {question: "Hamlet Author", answer: "Shakespeare", showing: null},
-//        {question: "Bell Jar Author", answer: "Plath", showing: null},
-//        ...
-//      ],
-//    },
-//    ...
-//  ]
 const NUM_CATEGORIES = 6;
 const NUM_QUESTIONS_PER_CAT = 5;
 let categories = [];
@@ -39,12 +20,6 @@ return _.sampleSize(catIds,NUM_CATEGORIES);
  *
  *  Returns { title: "Math", clues: clue-array }
  *
- * Where clue-array is:
- *   [
- *      {question: "Hamlet Author", answer: "Shakespeare", showing: null},
- *      {question: "Bell Jar Author", answer: "Plath", showing: null},
- *      ...
- *   ]
  */
 
 async function getCategory(catId) {
@@ -153,11 +128,11 @@ async function setupAndStart() {
 
 /** On click of start / restart button, set up game. */
 $('#restart').on('click',setupAndStart);
-// TODO
+
 
 /** On page load, add event handler for clicking clues */
 $(async function(){
 setupAndStart();
 $('#jeopardy').on('click','td',handleClick);
 });
-// TODO
+
