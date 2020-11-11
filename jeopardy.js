@@ -9,7 +9,7 @@ let categories = [];
  */
 
 async function getCategoryIds() {
-let response = await axios.get('http://jservice.io/api/random');
+let response = await axios.get('https://jservice.io/api/categories?count=100');
 let catIds = response.data.map(function(c){
     return c.id;    
 });
