@@ -23,7 +23,7 @@ return _.sampleSize(catIds,NUM_CATEGORIES);
  */
 
 async function getCategory(catId) {
-let response = await axios.get(`https://jservice.io/api/category?id=${catId}`)
+let response = await axios.get(`https://jservice.io/api/category?id=${catId}`);
 let cat = response.data;
 let allClues = cat.clues; 
 let randomClues = _.sampleSize(allClues, NUM_QUESTIONS_PER_CAT)    
